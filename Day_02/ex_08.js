@@ -1,5 +1,4 @@
-function SandwichCheck() {
-    if (breadCount >= 2 && hamCount >= 1 && tunaCount >= 1) {
+if (breadCount >= 2 && hamCount >= 1 && tunaCount >= 1) {
       displayThisText("I can make a royal sandwich!");
     } else if (breadCount >= 2 && hamCount >= 1) {
       displayThisText("I can make a ham sandwich!");
@@ -8,6 +7,3 @@ function SandwichCheck() {
     } else {
       displayThisText("I'd rather be fasting tonight..");
     }
-  }
-  
-  SandwichCheck();
