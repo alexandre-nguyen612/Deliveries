@@ -5,10 +5,8 @@ const likeButtons = document.querySelectorAll('.like-btn');
 
 plusButtons.forEach(button => {
     button.addEventListener('click', function() {
-        // Trouver l'élément d'entrée dans le même conteneur que le bouton
         const quantityInput = this.closest('.quantity').querySelector('input');
         
-        // Augmenter la valeur de l'entrée
         let currentValue = parseInt(quantityInput.value, 10);
         quantityInput.value = currentValue + 1;
     });
